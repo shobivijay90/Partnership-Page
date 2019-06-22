@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: slide 15s infinite;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("images/innovation1.jpg");
+  }
+  25% {
+    background-image: url("images/innovation2.jpg");
+  }
+  50% {
+    background-image: url("images/innovation3.jpg");
+  }
+  75% {
+    background-image: url("images/innovation4.jpg");
+  }
+  100% {
+    background-image: url("images/innovation5.jpg");
+  }
+}
+
+.description {
+  font-size: 30px;
+  line-height: 1.5;
+  border: 5px solid white;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5%;
+  text-shadow: 2px 2px 2px gray;
+  color: #05386b;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+
+.heading,
+.options {
+  font-size: 30px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #05386b;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #91ae3d;
+}
+
+.partners {
+  color: #05386b;
+  font-size: 25px;
+  font-weight: bold;
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+  margin-right: auto;
+  margin-left: auto;
+  text-shadow: 1px 1px 2px gray;
+}
+#highlight {
+  color: orange;
+}
+.flex img {
+  width: 400px;
+  height: 300px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 5px gray;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.flex div {
+  width: 70%;
+  text-align: center;
+}
+
+.flex div h3 {
+  font-size: 25px;
+  color: orange;
+  text-shadow: 1px 1px 2px gray;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+.flex div p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.flex div .explore {
+  font-size: 20px;
+  width: 30%;
+  height: 50px;
+  background-color: #05386b;
+  color: white;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 10px;
+}
+
+.options span {
+  color: #05386b;
+}
+
+@media screen and (max-width: 600px) {
+  .slider {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  .description {
+    font-size: 12px;
+    text-shadow: 1px 1px 2px gray;
+    border: 2px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 50%;
+    margin: auto;
+  }
+
+  .heading,
+  .options {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .partners {
+    font-size: 12px;
+    text-shadow: 0px 0px 0px lightgray;
+  }
+
+  .flex img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .flex div h3 {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .flex div p {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .flex div .explore {
+    font-size: 16px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .slider {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .description {
+    font-size: 16px;
+    text-shadow: 1px 1px 2px gray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 40%;
+    margin: auto;
+  }
+
+  .heading,
+  .options {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .flex img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .flex {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .flex div h3 {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .flex div p {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .flex div .explore {
+    font-size: 16px;
+    width: 30%;
+    height: 40px;
+  }
+}
